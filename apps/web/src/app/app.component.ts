@@ -6,10 +6,12 @@ import { EmailImgComponent } from '@angular-email/img';
 import { EmailHtmlComponent } from '@angular-email/html';
 import { EmailHeadComponent } from '@angular-email/head';
 import { EmailBodyComponent } from '@angular-email/body';
+import { EmailContainerComponent } from '@angular-email/container';
+
 
 @Component({
   standalone: true,
-  imports: [RouterModule, EmailButtonComponent, EmailTextComponent, EmailImgComponent, EmailHtmlComponent, EmailHeadComponent, EmailBodyComponent],
+  imports: [RouterModule, EmailButtonComponent, EmailTextComponent, EmailImgComponent, EmailHtmlComponent, EmailHeadComponent, EmailBodyComponent, EmailContainerComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
 })

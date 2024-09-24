@@ -17,6 +17,7 @@
     "paths": {
       "@angular-email/body": ["packages/body/src/index.ts"],
       "@angular-email/button": ["packages/button/src/index.ts"],
+      "@angular-email/container": ["packages/container/src/index.ts"],
       "@angular-email/head": ["packages/head/src/index.ts"],
       "@angular-email/html": ["packages/html/src/index.ts"],
       "@angular-email/img": ["packages/img/src/index.ts"],
