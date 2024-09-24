@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@angular-email/button": ["packages/button/src/index.ts"],
+      "@angular-email/html": ["packages/html/src/index.ts"],
       "@angular-email/img": ["packages/img/src/index.ts"],
       "@angular-email/text": ["packages/text/src/index.ts"]
     }
