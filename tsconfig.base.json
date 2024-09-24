@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-email/button": ["packages/button/src/index.ts"]
+      "@angular-email/button": ["packages/button/src/index.ts"],
+      "@angular-email/text": ["packages/text/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
