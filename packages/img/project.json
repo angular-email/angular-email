@@ -6,6 +6,22 @@
   "projectType": "library",
   "tags": ["packages/img"],
   "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/img/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/img/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/img/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

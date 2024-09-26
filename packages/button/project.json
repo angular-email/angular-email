@@ -6,6 +6,22 @@
   "projectType": "library",
   "tags": ["packages/button"],
   "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/button/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/button/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/button/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

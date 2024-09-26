@@ -6,6 +6,22 @@
   "projectType": "library",
   "tags": ["packages/text"],
   "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/text/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/text/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/text/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
