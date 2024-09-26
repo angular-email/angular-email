@@ -2,7 +2,9 @@
   "name": "@angular-email/angular-email",
   "version": "1.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:all": "nx run-many --target=build --all"
+  },
   "dependencies": {
     "@angular/animations": "~18.2.0",
     "@angular/common": "~18.2.0",
